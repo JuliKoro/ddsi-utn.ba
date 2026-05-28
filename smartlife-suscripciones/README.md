@@ -20,7 +20,7 @@ Para resolver la variación en la lógica de cálculo según el tipo de plan, se
 * **Ventaja Arquitectónica:** La clase `FacturaMensual` (Contexto) delega el cálculo a la abstracción `Plan` (Estrategia). Esto permite agregar nuevos tipos de planes en el futuro (Cumpliendo el principio *Open/Closed* de SOLID) sin modificar la lógica central de facturación y permite a los clientes cambiar de plan dinámicamente en tiempo de ejecución.
 
 ### Diagrama de Clases (Modelo de Dominio)
-![UML](/DiagramaDeClases_Suscripciones.png)
+![UML](smartlife-suscripciones/DiagramaDeClases_Suscripciones.png)
 
 ---
 
