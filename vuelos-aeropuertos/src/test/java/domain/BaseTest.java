@@ -10,6 +10,7 @@ import org.junit.Before;
 
 import java.util.*;
 
+// Clase Abstracta para que hereden el resto de Tests (Clases de Prueba) y no tener que instanciar repetidas veces
 public abstract class BaseTest {
     protected List<Pasajero> pasajeros;
     protected List<Avion> aviones;
@@ -25,8 +26,9 @@ public abstract class BaseTest {
         this.aeropuertos    = new ArrayList<>();
     }
 
-    @Before
+    @Before // Annotation para indicar que esto debe ejecutarse automáticamente antes de cada uno de los tests
     public void inicializar() {
+        // Este metodo carga listas en memoria con objetos de prueba simulados
         this.inicializarPaises();
         this.inicializarCiudades();
         this.inicializarAeropuertos();

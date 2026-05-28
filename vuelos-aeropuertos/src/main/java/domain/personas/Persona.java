@@ -1,5 +1,6 @@
 package domain.personas;
 
+// Clase Abstracta (Hereda de la Clase Persona)
 public abstract class Persona {
     private String nombre;
     private String apellido;

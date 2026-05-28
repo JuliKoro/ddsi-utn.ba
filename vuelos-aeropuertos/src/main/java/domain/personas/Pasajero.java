@@ -47,10 +47,11 @@ public class Pasajero extends Persona {
         return this.vuelos.size();
     }
 
+    // Metodo para contar la cantidad de veces en base a un filtro
     public Integer cantVecesQueVisitaste(Ciudad unaCiudad) {
-        return (int) this.vuelos
+        return (int) this.vuelos // casteo a (int) ya que count() devuelve un long
                 .stream()
-                .filter(v -> v.tuDestinoEs(unaCiudad))
-                .count();
+                .filter(v -> v.tuDestinoEs(unaCiudad)) // utiliza una funcion lambda
+                .count(); // para contar
     }
 }

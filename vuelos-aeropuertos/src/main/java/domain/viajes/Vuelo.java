@@ -13,7 +13,7 @@ import java.util.List;
 public class Vuelo {
     private Aeropuerto origen;
     private Aeropuerto destino;
-    private LocalDateTime fecha;
+    private LocalDateTime fecha; // LocalDateTime: clase utilizada para fecha y hora
     private Double duracionEstimadaEnMins;
     private Integer cantAsientosOfrecidos;
     private Avion avion;

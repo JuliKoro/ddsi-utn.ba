@@ -7,7 +7,7 @@ import java.util.List;
 public class Pais {
     private String nombre;
     private Continente continente;
-    private List<Ciudad> ciudades;
+    private List<Ciudad> ciudades; // Es un Enumerador (enum)
 
     public Pais(String nombre, Continente continente) {
         this.ciudades = new ArrayList<>();
@@ -31,6 +31,8 @@ public class Pais {
         this.continente = continente;
     }
 
+    // Para agregar varios elementos a mi coleccion (generalizados)
+    // Ciudad ... ciudades: Son parametros variables (puede llamar al metodo con n cosas)
     public void agregarCiudades(Ciudad ... ciudades) {
         Collections.addAll(this.ciudades, ciudades);
     }
