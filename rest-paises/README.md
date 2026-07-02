@@ -2,6 +2,13 @@
 
 Ejemplo educativo de **consumo de una API REST** pública: [REST Countries](https://restcountries.com/). Los datos se obtienen de la versión documentada del sitio (por ejemplo `v3.1`), que expone información sobre países vía HTTP.
 
+> [!WARNING]
+> REST Countries actualmente está deprecado para este ejemplo, ya que se convirtió en una API REST cerrada que necesita de una API Key.
+
+> [!TIP]
+> Se recomienda refactorizar este proyecto con una API REST libre y abierta, como por ejemplo [Countries.dev](https://countries.dev/), que es una buena opción de alternativa.
+
+
 ## Objetivo
 
 Centralizar en un componente **`BuscadorDePaises`** una interfaz de uso en código para consultar países según distintos criterios alineados con la API:
