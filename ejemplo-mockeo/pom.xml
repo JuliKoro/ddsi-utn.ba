@@ -24,6 +24,7 @@
   </build>
 
   <dependencies>
+    <!-- Framework de Testing (JUnit) -->
     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -32,6 +33,7 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Biblioteca de Mockeo -->
     <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
     <dependency>
       <groupId>org.mockito</groupId>
@@ -40,6 +42,7 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Utilidades Lombok (Getters/Setters) -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>

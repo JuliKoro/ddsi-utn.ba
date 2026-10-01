@@ -13,7 +13,9 @@ public class Viaje {
     private double demoraAproximadaEnMins;
 
     public void calcularDemoraAproximadaEnMins(CalculadorDeDistancia calculadorDeDistancia, CalculadorDeDemora calculadorDeDemora) {
+        // 1. Obtiene la distancia delegando en el calculador de distancia
         float distanciaEnMetros = calculadorDeDistancia.distanciaEnMetrosEntre(this.puntoDePartida, this.destino);
+        // 2. Calcula la demora delegando en el calculador de demora
         this.demoraAproximadaEnMins = calculadorDeDemora.demoraAproximadaEnMinsParaRecorrer(distanciaEnMetros);
     }
 }
