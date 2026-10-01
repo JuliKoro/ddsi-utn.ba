@@ -1,0 +1,33 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Ubicacion {
+    - latitud: float
+    - longitud: float
+}
+
+class Viaje {
+    - demoraAproximadaEnMins: double
+    - destino: Ubicacion
+    - puntoDePartida: Ubicacion
+    + calcularDemoraAproximadaEnMins(CalculadorDeDistancia, CalculadorDeDemora): void
+}
+
+interface CalculadorDeDistancia <<interface>> {
+    + distanciaEnMetrosEntre(Ubicacion, Ubicacion): float
+}
+
+interface CalculadorDeDemora <<interface>> {
+    + demoraAproximadaEnMinsParaRecorrer(float): double
+}
+
+' Relaciones estructurales
+Viaje --> Ubicacion
+Viaje --> Ubicacion
+
+' Relaciones de uso (dependencias)
+Viaje ..> CalculadorDeDistancia : <<use>>
+Viaje ..> CalculadorDeDemora : <<use>>
+CalculadorDeDistancia ..> Ubicacion : <<use>>
+
+@enduml
